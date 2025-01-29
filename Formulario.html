@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario - Nintendo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #e7000a;
+            padding: 15px;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 15px;
+        }
+        .form-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 30px auto;
+        }
+        h1 {
+            color: #e7000a;
+        }
+        label {
+            display: block;
+            text-align: left;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #e7000a;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+        }
+        input[type="submit"]:hover {
+            background-color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="productos.html">Productos</a>
+            <a href="ofertas.html">Ofertas</a>
+        </nav>
+    </header>
+
+    <div class="form-container">
+        <h1>Registrate</h1>
+        <form>
+            <label for="cedula">Cédula:</label>
+            <input type="text" id="cedula" name="cedula" placeholder="Ingrese su cédula">
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido">
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" placeholder="Ingrese su dirección">
+
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" placeholder="Ingrese su teléfono">
+
+            <label for="sexo">Sexo:</label>
+            <select id="sexo" name="sexo">
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+            </select>
+
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" placeholder="Ingrese su correo">
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
+
